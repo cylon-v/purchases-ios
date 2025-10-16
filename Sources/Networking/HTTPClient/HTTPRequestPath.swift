@@ -62,7 +62,7 @@ extension HTTPRequestPath {
         } else {
             baseURL = Self.serverHostURL
         }
-        let final = URL(string: "/revenue-cat/" + self.relativePath, relativeTo: baseURL)
+        let final = URL(string: self.relativePath, relativeTo: baseURL)
         print("VOVAN: url: \(final!.absoluteString)")
         return final
     }
@@ -117,7 +117,7 @@ extension HTTPRequest {
 extension HTTPRequest.Path: HTTPRequestPath {
 
     // swiftlint:disable:next force_unwrapping
-    static let serverHostURL = URL(string: "https://alpha.adiosvpn.com/revenue-cat/")!
+    static let serverHostURL = URL(string: "https://alpha.adiosvpn.com")!
 
     var fallbackHosts: [URL] {
         switch self {
