@@ -62,7 +62,9 @@ extension HTTPRequestPath {
         } else {
             baseURL = Self.serverHostURL
         }
-        return URL(string: self.relativePath, relativeTo: baseURL)
+        let final = URL(string: self.relativePath, relativeTo: baseURL)
+        print("VOVAN: url: \(final!.absoluteString)")
+        return final
     }
 }
 
