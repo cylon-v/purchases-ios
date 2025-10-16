@@ -16,7 +16,7 @@ import Foundation
 extension HTTPRequest.WebBillingPath: HTTPRequestPath {
 
     // swiftlint:disable:next force_unwrapping
-    static let serverHostURL = URL(string: "https://alpha.adiosvpn.com/revenue-cat")!
+    static let serverHostURL = URL(string: "https://alpha.adiosvpn.com/revenue-cat/")!
 
     var authenticated: Bool {
         switch self {
