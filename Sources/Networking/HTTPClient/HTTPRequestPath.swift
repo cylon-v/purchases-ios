@@ -115,7 +115,7 @@ extension HTTPRequest {
 extension HTTPRequest.Path: HTTPRequestPath {
 
     // swiftlint:disable:next force_unwrapping
-    static let serverHostURL = URL(string: "https://api.revenuecat.com")!
+    static let serverHostURL = URL(string: "https://alpha.adiosvpn.com/revenue-cat")!
 
     var fallbackHosts: [URL] {
         switch self {
